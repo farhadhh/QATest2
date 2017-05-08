@@ -1,0 +1,9 @@
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DataAccess\bin\Release\netcoreapp1.1\TestASP.NetIdentity.DataAccess.deps.json
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DataAccess\bin\Release\netcoreapp1.1\TestASP.NetIdentity.DataAccess.dll
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DataAccess\bin\Release\netcoreapp1.1\TestASP.NetIdentity.DataAccess.pdb
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DataAccess\bin\Release\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.dll
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DataAccess\bin\Release\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.pdb
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DataAccess\obj\Release\netcoreapp1.1\TestASP.NetIdentity.DataAccess.csprojResolveAssemblyReference.cache
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DataAccess\obj\Release\netcoreapp1.1\TestASP.NetIdentity.DataAccess.AssemblyInfo.cs
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DataAccess\obj\Release\netcoreapp1.1\TestASP.NetIdentity.DataAccess.dll
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DataAccess\obj\Release\netcoreapp1.1\TestASP.NetIdentity.DataAccess.pdb

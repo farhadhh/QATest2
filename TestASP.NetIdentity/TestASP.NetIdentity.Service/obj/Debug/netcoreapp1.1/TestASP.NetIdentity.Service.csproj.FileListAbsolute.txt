@@ -1,0 +1,14 @@
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.Service\bin\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.deps.json
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.Service\bin\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.dll
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.Service\bin\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.pdb
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.Service\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.csprojResolveAssemblyReference.cache
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.Service\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.AssemblyInfo.cs
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.Service\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.dll
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.Service\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.pdb
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.Service\bin\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.deps.json
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.Service\bin\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.dll
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.Service\bin\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.pdb
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.Service\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.AssemblyInfo.cs
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.Service\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.dll
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.Service\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.pdb
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.Service\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.Service.csprojResolveAssemblyReference.cache

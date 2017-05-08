@@ -1,0 +1,42 @@
+@model TestASP.NetIdentity.DomainEntities.Answer
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Answer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AnswerText)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AnswerText)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NextQuestionId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NextQuestionId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AnswerType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AnswerType.AnswerTypeText)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Questionnaire)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Questionnaire.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

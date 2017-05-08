@@ -1,0 +1,53 @@
+﻿@using TestASP.NetIdentity.DomainEntities;
+@model IEnumerable<Answer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<h2>Answers</h2>
+
+@if (Model != null && Model.Count() > 0)
+{
+    var q = Model.FirstOrDefault().Questionnaire.Question.QuestionTitle;
+    <p>@q</p>
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-success" asp-route-adid="@((Model != null && Model.Count() > 0) ? Model.FirstOrDefault().QuestionnaireId : 0)" onclick="AddInfo(this.href);">New Answer</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AnswerText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnswerType)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AnswerText)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AnswerType.AnswerTypeText)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning" onclick="EditInfo(this.href)">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger" onclick="DeleteInfo(this.href)">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-action="" class="btn btn-primary" onclick="closeAnswerList();">Close</a>
+<!-- Partial Views for Add and Edit of Answers -->
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

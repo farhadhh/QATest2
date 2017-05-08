@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestASP.NetIdentity.DataAccess\TestASP.NetIdentity.DataAccess.csproj" />
+    <ProjectReference Include="..\TestASP.NetIdentity.DomainEntities\TestASP.NetIdentity.DomainEntities.csproj" />
+  </ItemGroup>
+
+</Project>

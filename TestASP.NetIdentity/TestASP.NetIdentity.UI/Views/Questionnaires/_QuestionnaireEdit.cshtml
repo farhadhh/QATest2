@@ -1,0 +1,24 @@
+﻿@using TestASP.NetIdentity.DomainEntities;
+@model Questionnaire
+
+<form asp-action="Edit">
+    
+       
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Id" />
+        
+            <input type="hidden" asp-for="AdId" value="@ViewBag.AdId" />
+        
+            <input type="hidden" asp-for="QuestionId" value="@ViewBag.QuestionId" />
+        
+
+                <input type="submit" value="Finish" class="btn btn-primary" style="padding-left:10px;" />
+                
+
+        
+    
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

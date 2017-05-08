@@ -1,0 +1,28 @@
+﻿@using TestASP.NetIdentity.DomainEntities;
+@model Questionnaire
+
+<form asp-action="MakeQuestionnaire" asp-controller="Questionnaires" id="MakeQuestionnaireForm">
+
+    <input type="hidden" asp-for="AdId" value="@ViewBag.AdId" />
+    <input id="QSSubmitBtn" type="submit" class="btn-primary btn-lg" value="Continue"/>
+
+
+</form>
+
+<script>
+    $("#MakeQuestionnaireForm").submit(function (e) {
+        var url = "/Questionnaires/MakeQuestionnaire";
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $("#MakeQuestionnaireForm").serialize(),
+            success: function (data) {
+                $("#DependentForm").slideDown();
+                $("#Preview").slideDown();
+                $("#QuestionPreview").text(JSON.stringify(data.question.questionTitle));
+            }
+        });
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+    });
+</script>

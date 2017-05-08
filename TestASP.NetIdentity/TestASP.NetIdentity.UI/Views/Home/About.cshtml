@@ -1,0 +1,129 @@
+﻿@using TestASP.NetIdentity.DomainEntities;
+@model Questionnaire
+@{
+    ViewData["Title"] = "Make Questionnaire";
+}
+
+<h1>Make Your Custom Questionnaire Using Our Engine</h1>
+<br />
+<br />
+
+<button id="StartBtn" type="button" class="btn-primary btn-lg">Let's Begin</button>
+<br />
+<br />
+<br />
+<form asp-action="About" asp-controller="Home">
+    <div id="form1">
+        <input type="hidden" asp-for="AdId" value="@ViewBag.AdId" />
+
+        <div class="row" style="padding-top:20px;">
+            <div class="col-lg-6">
+                <h3>Make Your First Question: </h3>
+            </div>
+        </div>
+
+        @Html.Partial("_CreateQuestion")
+        
+
+        <div class="row" id="form3" style="padding-top:20px;">
+            <div class="col-sm-2">
+                <label>If Yes:  </label>
+            </div>
+            <div class="col-sm-2">
+                <input type="button" class="btn-primary" value="Make new Question" id="YesStart" />
+            </div>
+            <div class="col-sm-3">
+                <input type="button" class="btn-warning" value="Go to the next Question" id="" />
+            </div>
+
+        </div>
+
+        <div class="row" id="form5" style="padding-top:20px;">
+            <div class="col-sm-3">
+                <label>Please Insert the Dependent Question Title:  </label>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="" />
+            </div>
+
+            <div class="col-sm-3">
+                <label>Select the Question Type:  </label>
+            </div>
+            <div class="col-sm-3">
+                <select class="form-control" asp-items="ViewBag.QTypeId" id="selectQtype"></select>
+            </div>
+
+        </div>
+
+        <div class="row" id="form4" style="padding-top:20px;">
+            <div class="col-sm-2">
+                <label>If No:  </label>
+            </div>
+            <div class="col-sm-2">
+                <input type="button" class="btn-primary" value="Make new Question" id="" />
+            </div>
+            <div class="col-sm-3">
+                <input type="button" class="btn-warning" value="Go to the next Question" id="" />
+            </div>
+
+        </div>
+
+        <input id="SubmitBtn" type="submit" class="btn-primary btn-lg" />
+    </div>
+
+   
+
+</form>
+
+
+<script>
+    $(document).ready(function () {
+        $("#form1").hide();
+     //   $("#form2").hide();
+        $("#form3").hide();
+        $("#form4").hide();
+        $("#form5").hide();
+    });
+        $(document).ready(function () {
+            $("#StartBtn").click(function () {
+                $("#form1").slideDown();
+
+            });
+
+        });
+
+        $(document).ready(function () {
+            
+
+        });
+</script>
+<script>
+        $(document).ready(function () {
+            $("#selectQtype").change(function () {
+                var answer = $("#selectQtype option:selected").text();
+                if (answer == "Single-option") {
+                    $("#chbox1").click(function () {
+                        if ($('#chbox1').is(":checked")) {
+                            $("#form3").slideDown();
+                            $("#form4").slideDown();
+                        }
+                        else {
+                            $("#form3").slideUp();
+                            $("#form4").slideUp();
+                        }
+                    });
+
+                }
+            });
+
+        });
+
+        $(document).ready(function () {
+            $("#YesStart").click(function () {
+                $("#form5").slideDown();
+
+            });
+
+        });
+
+</script>

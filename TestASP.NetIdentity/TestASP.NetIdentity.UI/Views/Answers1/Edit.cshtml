@@ -1,0 +1,54 @@
+@model TestASP.NetIdentity.DomainEntities.Answer
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form asp-action="Edit">
+    <div class="form-horizontal">
+        <h4>Answer</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <label asp-for="QuestionnaireId" class="control-label col-md-2"></label>
+            <div class="col-md-10">
+                <select asp-for="QuestionnaireId" class="form-control" asp-items="ViewBag.QuestionnaireId"></select>
+                <span asp-validation-for="QuestionnaireId" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="AnswerTypeId" class="control-label col-md-2"></label>
+            <div class="col-md-10">
+                <select asp-for="AnswerTypeId" class="form-control" asp-items="ViewBag.AnswerTypeId"></select>
+                <span asp-validation-for="AnswerTypeId" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="AnswerText" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="AnswerText" class="form-control" />
+                <span asp-validation-for="AnswerText" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="NextQuestionId" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="NextQuestionId" class="form-control" />
+                <span asp-validation-for="NextQuestionId" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

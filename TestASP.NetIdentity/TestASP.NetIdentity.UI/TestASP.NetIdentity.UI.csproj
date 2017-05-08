@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <UserSecretsId>aspnet-TestASP.NetIdentity.UI-522495e0-4971-4180-b879-064a9d8fbdb6</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\**" />
+    <Compile Remove="Models\AccountViewModels\**" />
+    <Compile Remove="Models\ManageViewModels\**" />
+    <Compile Remove="Services\**" />
+    <Compile Remove="Views\Answers1\**" />
+    <Content Remove="Data\**" />
+    <Content Remove="Models\AccountViewModels\**" />
+    <Content Remove="Models\ManageViewModels\**" />
+    <Content Remove="Services\**" />
+    <Content Remove="Views\Answers1\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="Models\AccountViewModels\**" />
+    <EmbeddedResource Remove="Models\ManageViewModels\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <EmbeddedResource Remove="Views\Answers1\**" />
+    <None Remove="Data\**" />
+    <None Remove="Models\AccountViewModels\**" />
+    <None Remove="Models\ManageViewModels\**" />
+    <None Remove="Services\**" />
+    <None Remove="Views\Answers1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Answers1Controller.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestASP.NetIdentity.Biz\TestASP.NetIdentity.Biz.csproj" />
+    <ProjectReference Include="..\TestASP.NetIdentity.DataAccess\TestASP.NetIdentity.DataAccess.csproj" />
+    <ProjectReference Include="..\TestASP.NetIdentity.DomainEntities\TestASP.NetIdentity.DomainEntities.csproj" />
+    <ProjectReference Include="..\TestASP.NetIdentity.Service\TestASP.NetIdentity.Service.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>

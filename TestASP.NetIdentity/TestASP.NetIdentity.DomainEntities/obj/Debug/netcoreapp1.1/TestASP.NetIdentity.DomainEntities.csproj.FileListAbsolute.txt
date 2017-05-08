@@ -1,0 +1,14 @@
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\bin\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.deps.json
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\bin\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.dll
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\bin\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.pdb
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.AssemblyInfo.cs
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.dll
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.pdb
+E:\Projects\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.csprojResolveAssemblyReference.cache
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\bin\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.deps.json
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\bin\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.dll
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\bin\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.pdb
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.AssemblyInfo.cs
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.dll
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.pdb
+E:\FF\TestASP.NetIdentity\TestASP.NetIdentity.DomainEntities\obj\Debug\netcoreapp1.1\TestASP.NetIdentity.DomainEntities.csprojResolveAssemblyReference.cache

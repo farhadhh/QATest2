@@ -1,0 +1,36 @@
+﻿@using TestASP.NetIdentity.DomainEntities;
+@model Question
+<form asp-action="Create" asp-controller="Questions" id="QuestionAddForm">
+    <div class="row" id="form2" style="padding:20px; padding-bottom:0;">
+        <div class="col-md-6">
+            <label>Please Insert the Question Title:  </label>
+        </div>
+        <div class="col-md-6">
+            <input asp-for="QuestionTitle" type="text" class="form-control" id="" />
+        </div>
+
+    </div>
+    <div class="row" style="padding:20px; padding-bottom:0;">
+
+        <input asp-for="IsDependent" type="hidden" value="false" />
+
+        <div class="col-md-6">
+            <label>Select the Question Type:  </label>
+        </div>
+        <div class="col-md-6">
+            <select asp-for="QTypeId" class="form-control" asp-items="ViewBag.QTypeId" id="selectQtype"></select>
+        </div>
+    </div>
+    <div class="row" style="padding:20px;">
+        <div class="col-md-9">
+
+        </div>
+        <div class="col-md-3" >
+            <input type="submit" value="Add Question" class="btn btn-primary" id="submitQuestion" />
+        </div>
+    </div>
+
+
+</form>
+
+

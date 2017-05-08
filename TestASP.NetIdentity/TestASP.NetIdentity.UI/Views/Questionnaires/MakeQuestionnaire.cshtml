@@ -1,0 +1,215 @@
+﻿@using TestASP.NetIdentity.DomainEntities;
+@model Questionnaire
+@{
+    ViewData["Title"] = "Make Questionnaire";
+}
+
+<h1>Make Your Custom Questionnaire Using Our Engine</h1>
+<br />
+<br />
+
+<button id="StartBtn" type="button" class="btn-primary btn-lg">Let's Begin</button>
+<br />
+<br />
+<br />
+
+<div id="MainForm">
+    <div class="row" style="padding:20px;">
+        <div class="col-lg-6">
+            <h3>Make Your Question: </h3>
+        </div>
+    </div>
+
+    
+        <div class="row">
+            
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    @Html.Partial("_CreateQuestion")
+                </div>
+            </div>
+            <div class="col-md-6" >
+                <div class="panel panel-default">
+                    @Html.Partial("_AddQuestion")
+                </div>
+            </div>
+        </div>
+
+
+        <div id="ContinueQuestionnaire">
+            <div class="row">
+                <div class="form-group" style="padding-top:20px;">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-5">
+                        <label id="successLabel" style="font-size:24px; color:darkslateblue;"></label>
+                    </div>
+                    <div class="col-sm-2">
+                        @Html.Partial("_QuestionnaireAdd")
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+
+        <div id="DependentForm">
+
+            <div class="row"  style="padding:15px;">
+
+                <div class="col-lg-1">
+                    <button type="button" id="AddAnswerBtn" class="btn btn-danger">Add Answers</button>
+                </div>
+                <div class="col-lg-1" >
+                    @Html.Partial("_QuestionnaireEdit")
+                </div>
+            </div>
+        </div>
+
+        <div id="Answer">
+            @Html.Partial("Answers")
+
+        </div>
+    <hr />
+</div>
+   
+<div id="Preview" style="padding:15px;background-color:lightblue ">
+    <h2> Preview </h2>
+    <div class="panel panel-info" style="">
+
+        <div style="padding:25px;">
+            <label id="QuestionPreview"></label>
+            <div id="AnswersPreview">
+                <form id="AnswersPreviewform">
+
+                </form>
+            </div>
+            <div id="DependentQuestionPreview"></div>
+
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $("input").on("click", function () {
+        $("#log").html($("input:checked").val() + " is checked!");
+    });
+</script>
+
+<script>
+    $("#QuestionForm").submit(function (e) {
+        var url = "/Questions/Create";
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $("#QuestionForm").serialize(),
+            success: function (data) {
+                $("#successLabel").text(data);
+                $("#ContinueQuestionnaire").slideDown();
+            }
+        });
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+    });
+</script>
+<script>
+    $("#QuestionAddForm").submit(function (e) {
+        var url = "/Questions/Create";
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $("#QuestionAddForm").serialize(),
+            success: function (data) {
+                $("#successLabel").text(data);
+                $("#ContinueQuestionnaire").slideDown();
+            }
+        });
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+    });
+</script>
+
+
+
+<script>
+    $("#DependentQuestionForm").submit(function (e) {
+        var url = "/Questions/CreateQuestion";
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $("#DependentQuestionForm").serialize(),
+            success: function (data) {
+                alert(data);
+                $("#lalaland").slideUp();
+            }
+        });
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+    });
+</script>
+
+<script>
+    $("#DependentQuestionAddForm").submit(function (e) {
+        var url = "/Questions/CreateQuestion";
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $("#DependentQuestionAddForm").serialize(),
+            success: function (data) {
+                alert(data);
+                $("#lalaland").slideUp();
+            }
+        });
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+    });
+</script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#DependentForm").hide();
+            $("#AddAnswerLink").hide();
+            $("#form3").hide();
+            $("#form4").hide();
+            $("#form5").hide();
+            $("#Answer").hide();
+            $("#lalaland").hide();
+            $("#ContinueQuestionnaire").hide();
+            $("#MainForm").hide();
+            $("#Preview").hide();
+        });
+        $(document).ready(function () {
+            $("#StartBtn").click(function () {
+                $("#MainForm").slideDown();
+
+            });
+
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#chbox1").click(function () {
+                        if ($('#chbox1').is(":checked")) {
+                            $("#lalaland").slideDown();
+                        }
+                        else {
+                            $("#lalaland").slideUp();
+                        }
+            });
+        });
+
+        $(document).ready(function () {
+            $("#AddAnswerBtn").click(function () {
+                $("#Answer").slideDown();
+
+            });
+
+        });
+
+
+
+    </script>
